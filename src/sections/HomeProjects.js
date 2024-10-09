@@ -20,13 +20,13 @@ const HomeProjects = () => {
 
 
   return (
-    <div className="pt-10">
+    <div className="pt-10 ">
       <HomeHeader name="Projects" />
-      <div className=' gap-6 flex justify-evenly'>
+      <div className=' gap-6 flex justify-start items-center flex-wrap'>
         {catagories.map((item, index) => (
           <div key={`link-${item}`}
             onClick={() => handleWorkFiler(item)}
-            className={`${activeFilter ? "" : ""} text-center shadow-lg p-10 md:w-1/3 md:px-20 lg:w-1/4`}>
+            className={`${activeFilter ? "" : ""} font-medium text-center shadow-lg p-4 cursor-pointer hover:bg-teal-300 hover:text-white hover:translate-x-2 hover:duration-300`}>
             {item}
           </div>
 

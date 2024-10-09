@@ -26,7 +26,7 @@ function Home() {
     <div className={`${darkMode ? "dark" : ""} `}>
 
 
-      <main className=" dark:bg-black dark:text-white duration-300" >
+      <main className=" dark:bg-black dark:text-white duration-300 " >
         <section className="w-full" >
 
           <Navbar handleDarkMode={handleDarkMode} darkMode={darkMode} />
@@ -41,9 +41,13 @@ function Home() {
           <div className=" text-center bg-gradient-to-b mx-auto from-teal-500 rounded-full w-96 h-96 overflow-hidden md:w-96 md:h-96">
           </div>
         </div>
-       
+        <div className="px-10 lg:px-40">
         <HomeAbout />
         <HomeProjects />
+
+        </div>
+       
+        
 
 
         <section>
